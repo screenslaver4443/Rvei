@@ -1,14 +1,18 @@
 var ops = ['+', '-', '*', '/'];
-var Question1 = document.getElementById('Q1')
-
+var questions = [
+    document.getElementById('Q1'),
+    document.getElementById('Q2'),
+    document.getElementById('Q3'), 
+    document.getElementById('Q4'), 
+    document.getElementById('Q5'), 
+];
 function generateQuestions(){
-    // Question 1 Generation
-    let Q1ValueA = Math.floor(Math.random() * 100); //Generates a number between 1 & 100
-    let Q1ValueB = Math.floor(Math.random() * 100);
-    let Q1Op = ops[Math.floor(Math.random()*ops.length)];
-    console.log(Q1ValueA)
-    console.log(Q1Op)
-    console.log(Q1ValueB)
-    Question1.textContent = ('Question 1: '+Q1ValueA+Q1Op+Q1ValueB+'=');
-    console.log(Question1);
+    console.log('Function Run')
+    for (let i = 0; i < questions.length; i++) {
+        let valueA = Math.floor(Math.random() * 100); //Generates a number between 1 & 100
+        let valueB = Math.floor(Math.random() * 100); //Generates a number between 1 & 100
+        let operation = ops[Math.floor(Math.random()*ops.length)]
+        questions[i].textContent = ('Question '+(i+1)+': '+valueA+operation+valueB+'=')
+    }
 }
+
