@@ -6,19 +6,32 @@
             text-decoration: underline;
             font-family:sans-serif;
         }
+        img{
+            max-width: 100%;
+            border-radius: 3px;
+            border-style:solid;
+            border-color: black;
+
+        }
     </style>
     <title>Rvei: Arithmatic Worksheet</title>
 </head>
-<body>
-    <p><button>Download Now</button>
-        <button onclick="generateQuestions()">Generate Questions</button></p>
-    <div class="pdfconetent">
+<body onload="generateQuestions()">
+    <p><button onclick="generateQuestions()">Regenerate Questions</button></p>
+    <div class="pdfcontent">
         <h1>Worksheet</h1>
         <p id="Q1"> </p>
+        <img src="/images/grid.png">
         <p id="Q2"></p>
+        <img src="/images/grid.png">
         <p id="Q3"></p>
+        <img src="/images/grid.png">
         <p id="Q4"></p>
+        <img src="/images/grid.png">
         <p id="Q5"></p>
+        <img src="/images/grid.png">
     </div>    
     <script src="/scripts/WSsc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
 </body>
