@@ -27,8 +27,9 @@ function generateQuestionsSurds(){
         let valueBp = Math.floor(Math.random() * 5)*plusOrMinus; //Generates a number between 1 & 100
         let operation = ops[Math.floor(Math.random()*ops.length)];
         questions[i].innerHTML = ('<b>Question '+(i+1)+': </b>'+`${valueAb}<sup>${valueAp}</sup>${operation}${valueAb}<sup>${valueBp}</sup>=`);
-        // ToDo: Round to 2 decimel Places
-        answers.push(eval(`${Math.pow(valueAb, valueAp)} ${operation} ${Math.pow(valueAb, valueBp)}`))
-        
+        answers.push(Math.round(eval(`${Math.pow(valueAb, valueAp)} ${operation} ${Math.pow(valueAb, valueBp)}`)*100)/100);
     }
+}
+function viewAnswers(){
+                  
 }
