@@ -27,3 +27,10 @@ function cardFlip__Six() {
 function cardFlip__Seven() {
     cardSeven.classList.toggle('is-flipped');
 }
+
+function changeCardLeft() {
+
+}
+function changeCardRight() {
+    
+}

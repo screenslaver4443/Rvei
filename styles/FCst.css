@@ -13,39 +13,54 @@ body {
 }
 
 .card__One {
-    margin-left: 0px;
-    width: 700px;
-    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 900px;
+    height: 600px;
+    
 }
 .card__Two {
-    margin-left: 0px;
-    width: 700px;
-    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 900px;
+    height: 600px;
 }
 .card__Three {
-    margin-left: 0px;
-    width: 700px;
-    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 900px;
+    height: 600px;
 }
 .card__Four {
-    margin-left: 0px;
-    width: 700px;
-    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 900px;
+    height: 600px;
 }
 .card__Five {
-    margin-left: 0px;
-    width: 700px;
-    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 900px;
+    height: 600px;
 }
 .card__Six {
-    margin-left: 0px;
-    width: 700px;
-    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 900px;
+    height: 600px;
 }
 .card__Seven {
-    margin-left: 0px;
-    width: 700px;
-    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    width: 900px;
+    height: 600px;
 }
 
 .card__inner__One {
@@ -274,4 +289,79 @@ body {
 * {
     margin: 0;
     padding: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #454545;
+    font-family: Arial;
+  }
+.navbar a {
+float: left;
+font-size: 16px;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.dropdown {
+float: left;
+overflow: hidden;
+}
+.dropdown .dropbtn {
+font-size: 16px; 
+border: none;
+outline: none;
+color: white;
+padding: 14px 16px;
+background-color: inherit;
+font-family: inherit; /* Important for vertical align on mobile phones */
+margin: 0; /* Important for vertical align on mobile phones */
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+background-color: red;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.left,
+.right {
+    width: 50px;
+    height: 50px;
+    transition: .5s;
+    float: left;
+    box-shadow: -2px 2px 0 rgba(255,255,255,.5);
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left {
+    transform: rotate(45deg);
+}
+.right {
+    transform: rotate(225deg);
+}
+.left:hover,
+.right:hover {
+    box-shadow: -2px 2px 0 rgba(255,255,255,1);
 }

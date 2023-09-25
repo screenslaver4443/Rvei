@@ -6,6 +6,19 @@
         <title>Rvei: Flashcards</title>
     </head>
     <body>
+        <nav class="navbar">
+            <a href="index.html" id="logo">{logoHere}</a> 
+            <div class="dropdown">
+                <button class="dropbtn">Index Laws 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="INFOsurds.html">Information</a>
+                    <a href="FCsurds.html">Flashcards</a>
+                    <a href="WSsurds.html">Worksheet</a>
+                </div>
+            </div> 
+        </nav>
         <div class="card__One" onclick="cardFlip__One()">
             <div class="card__inner__One">
                 <div class="card__face card__face--front">
@@ -74,8 +87,61 @@
                 </div>
             </div>
         </div>
+        <div class="card__Five" onclick="cardFlip__Five()">
+            <div class="card__inner__Five">
+                <div class="card__face card__face--front">
+                    <h2>Fifth Index Law</h2>
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="card__content">
+                        <div class="card__header">
+                            <h2>Fifth Index Law</h2>
+                        </div>
+                        <div class="card__body">
+                            <img src="" alt="" class="ind5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card__Six" onclick="cardFlip__Six()">
+            <div class="card__inner__Six">
+                <div class="card__face card__face--front">
+                    <h2>Sixth Index Law</h2>
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="card__content">
+                        <div class="card__header">
+                            <h2>Sixth Index Law</h2>
+                        </div>
+                        <div class="card__body">
+                            <img src="" alt="" class="ind6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card__Seven" onclick="cardFlip__Seven()">
+            <div class="card__inner__Seven">
+                <div class="card__face card__face--front">
+                    <h2>Seventh Index Law</h2>
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="card__content">
+                        <div class="card__header">
+                            <h2>Seventh Index Law</h2>
+                        </div>
+                        <div class="card__body">
+                            <img src="" alt="" class="ind7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+        <div class="left" onclick="changeCardLeft()"></div>
+        <div class="right" onclick="changeCardRight()"></div>
 
         <script src="/scripts/FCsc.js"></script>
     </body>
