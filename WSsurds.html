@@ -13,12 +13,17 @@
             border-color: black;
 
         }
+        #answers {
+            text-align: center;
+            border: 2px solid black ;
+            margin-left: 40%;
+            margin-right: 40%;
+        }
     </style>
     <title>Rvei: Arithmatic Worksheet</title>
 </head>
 <body onload="generateQuestionsSurds()">
-    <p><button onclick="generateQuestionsSurds()">Regenerate Questions</button><button onclick="showAnswers()">View Answers</button></p>
-    <div class="pdfcontent">
+    <p><button onclick="generateQuestionsSurds()">Regenerate Questions</button><button onclick="viewAnswers()">View Answers</button><a href="index.html"><button>Return Home</button></a></p>
         <h1>Worksheet</h1>
         <p id="Q1"></p>
         <img src="/images/grid.png">
@@ -29,7 +34,7 @@
         <p id="Q4"></p>
         <img src="/images/grid.png">
         <p id="Q5"></p>
-        <img src="/images/grid.png">
-    </div>    
+        <img src="/images/grid.png"> 
+    <p id = "answers"></p>
     <script src="/scripts/WSsc.js"></script>
 </body>
