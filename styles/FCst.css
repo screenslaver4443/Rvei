@@ -19,48 +19,6 @@ body {
     width: 900px;
     height: 600px;
 }
-.card__Two {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 900px;
-    height: 600px;
-}
-.card__Three {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 900px;
-    height: 600px;
-}
-.card__Four {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 900px;
-    height: 600px;
-}
-.card__Five {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 900px;
-    height: 600px;
-}
-.card__Six {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 900px;
-    height: 600px;
-}
-.card__Seven {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    width: 900px;
-    height: 600px;
-}
 
 .card__inner__One {
     width: 100%;
@@ -70,74 +28,8 @@ body {
     cursor: pointer;
     position: relative;
 }
-.card__inner__Two {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
-.card__inner__Three {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
-.card__inner__Four {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
-.card__inner__Five {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
-.card__inner__Six {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
-.card__inner__Seven {
-    width: 100%;
-    height: 100%;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    cursor: pointer;
-    position: relative;
-}
 
 .card__inner__One.is-flipped {
-    transform: rotateY(180deg);
-}
-.card__inner__Two.is-flipped {
-    transform: rotateY(180deg);
-}
-.card__inner__Three.is-flipped {
-    transform: rotateY(180deg);
-}
-.card__inner__Four.is-flipped {
-    transform: rotateY(180deg);
-}
-.card__inner__Five.is-flipped {
-    transform: rotateY(180deg);
-}
-.card__inner__Six.is-flipped {
-    transform: rotateY(180deg);
-}
-.card__inner__Seven.is-flipped {
     transform: rotateY(180deg);
 }
 
@@ -195,66 +87,6 @@ body {
 }
 
 .ind1 {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 30px;
-    border-radius: 0%;
-    background-color: black;
-    border: 5px solid white;
-    object-fit: cover;
-}
-.ind2 {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 30px;
-    border-radius: 0%;
-    background-color: black;
-    border: 5px solid white;
-    object-fit: cover;
-}
-.ind3 {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 30px;
-    border-radius: 0%;
-    background-color: black;
-    border: 5px solid white;
-    object-fit: cover;
-}
-.ind4 {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 30px;
-    border-radius: 0%;
-    background-color: black;
-    border: 5px solid white;
-    object-fit: cover;
-}
-.ind5 {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 30px;
-    border-radius: 0%;
-    background-color: black;
-    border: 5px solid white;
-    object-fit: cover;
-}
-.ind6 {
-    display: block;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 30px;
-    border-radius: 0%;
-    background-color: black;
-    border: 5px solid white;
-    object-fit: cover;
-}
-.ind7 {
     display: block;
     width: 200px;
     height: 200px;
@@ -346,43 +178,12 @@ display: block;
 .one {
     display: block;
 }
-.two {
-    display: none;
+
+.inverted-button {
+    filter: invert(100%);
+    max-width: 5%;
 }
-.three {
-    display: none;
-}
-.four {
-    display: none;
-}
-.five {
-    display: none;
-}
-.six {
-    display: none;
-}
-.seven {
-    display: none;
+#leftbutton {
+    margin-left:45%;
 }
 
-.left,
-.right {
-    width: 50px;
-    height: 50px;
-    transition: .5s;
-    float: center;
-    box-shadow: -2px 2px 0 rgba(255,255,255,.5);
-    cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
-}
-.left {
-    transform: rotate(45deg);
-}
-.right {
-    transform: rotate(225deg);
-}
-.left:hover,
-.right:hover {
-    box-shadow: -2px 2px 0 rgba(255,255,255,1);
-}
