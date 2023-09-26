@@ -88,13 +88,13 @@ body {
 
 .ind1 {
     display: block;
-    width: 200px;
-    height: 200px;
+    width: 800px;
+    height: 400px;
     margin: 0 auto 30px;
     border-radius: 0%;
     background-color: black;
     border: 5px solid white;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .card__header h2 {
