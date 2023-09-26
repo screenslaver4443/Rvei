@@ -6,6 +6,8 @@ const cardFive = document.querySelector('.card__inner__Five');
 const cardSix = document.querySelector('.card__inner__Six');
 const cardSeven = document.querySelector('.card__inner__Seven');
 
+const Two = document.querySelector('.two');
+
 function cardFlip__One() {
     cardOne.classList.toggle('is-flipped');
 }
@@ -28,8 +30,8 @@ function cardFlip__Seven() {
     cardSeven.classList.toggle('is-flipped');
 }
 
-function changeCardLeft() {
-
+function changeCardLeft(twoID) {
+    Two.classList.toggle('two');
 }
 function changeCardRight() {
     
