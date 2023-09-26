@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="styles/QZsurds.css">
         <title>Rvei: Quiz</title>
     </head>
-    <body>
+    <body onload="reGenerateQuestionsSurds()">
         <nav class="navbar">
             <a href="index.html" id="logo">{logoHere}</a> 
             <div class="dropdown">
@@ -20,6 +20,17 @@
                 </div>
             </div> 
         </nav>
+        <div id="quizQuestions">
+            <br><h2>Surds Quiz</h2>
+            <br><p id="question"></p>
+            <br><p id="answerText">Insert Answer Below</p>
+            <input type="number" id="answer">
+            <br><div id="nextQuestion" onclick="reGenerateQuestionsSurds()"><p>Next Question</p></div>
+        </div>
+
+
+
+
 
         <script src="scripts/QZsurds.js"></script>
     </body>
