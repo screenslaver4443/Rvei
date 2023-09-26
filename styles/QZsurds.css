@@ -73,7 +73,7 @@ display: block;
     width: 1200px;
     height: 700px;
     border-radius: 16px;
-    background: #cee5ed;
+    background-image: linear-gradient(to bottom right, #cee5ed 10%, #2e2e2e 100%);
     align-content: center;
 }
 h2 {
@@ -87,19 +87,19 @@ h2 {
     margin-left: 20%;
     margin-right: 20%;
 }
-#answer, #answerText {
-    font-size: 24;
+#answerViewer, #answerText {
+    font-size: 22px;
     text-align: center;
 }
-#answer {
-    margin-left: 42.55%;
+#answerViewer {
+    margin-left: 38.5%;
 }
 #nextQuestion {
     border-radius: 20px;
     width: 150px;
     height: 50px;
     padding: 0.1px;
-    margin-top: 18%;
+    margin-top: 15.5%;
     margin-left: 86%;
     background-color: #2e2e2e;
     color: white;
