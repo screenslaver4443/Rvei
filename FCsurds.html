@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="/styles/FCst.css">
         <title>Rvei: Flashcards</title>
     </head>
-    <body>
+    <body onload='updatecard()'>
         <nav class="navbar">
             <a href="index.html" id="logo">{logoHere}</a> 
             <div class="dropdown">
@@ -24,117 +24,15 @@
             <div id="one" class="card__One" onclick="cardFlip__One()">
                 <div class="card__inner__One">
                     <div class="card__face card__face--front">
-                        <h2>First Index Law</h2>
+                        <h2 id="cardHeaderF">First Index Law</h2>
                     </div>
                     <div class="card__face card__face--back">
                         <div class="card__content">
                             <div class="card__header">
-                                <h2>First Index Law</h2>
+                                <h2 id="cardHeaderB">First Index Law</h2>
                             </div>
                             <div class="card__body">
-                                <img src="" alt="" class="ind1">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="two" class="card__Two" onclick="cardFlip__Two()">
-                <div class="card__inner__Two">
-                    <div class="card__face card__face--front">
-                        <h2>Second Index Law</h2>
-                    </div>
-                    <div class="card__face card__face--back">
-                        <div class="card__content">
-                            <div class="card__header">
-                                <h2>Second Index Law</h2>
-                            </div>
-                            <div class="card__body">
-                                <img src="" alt="" class="ind2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="three" class="card__Three" onclick="cardFlip__Three()">
-                <div class="card__inner__Three">
-                    <div class="card__face card__face--front">
-                        <h2>Third Index Law</h2>
-                    </div>
-                    <div class="card__face card__face--back">
-                        <div class="card__content">
-                            <div class="card__header">
-                                <h2>Third Index Law</h2>
-                            </div>
-                            <div class="card__body">
-                                <img src="" alt="" class="ind3">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="four" class="card__Four" onclick="cardFlip__Four()">
-                <div class="card__inner__Four">
-                    <div class="card__face card__face--front">
-                        <h2>Fourth Index Law</h2>
-                    </div>
-                    <div class="card__face card__face--back">
-                        <div class="card__content">
-                            <div class="card__header">
-                                <h2>Fourth Index Law</h2>
-                            </div>
-                            <div class="card__body">
-                                <img src="" alt="" class="ind4">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="five" class="card__Five" onclick="cardFlip__Five()">
-                <div class="card__inner__Five">
-                    <div class="card__face card__face--front">
-                        <h2>Fifth Index Law</h2>
-                    </div>
-                    <div class="card__face card__face--back">
-                        <div class="card__content">
-                            <div class="card__header">
-                                <h2>Fifth Index Law</h2>
-                            </div>
-                            <div class="card__body">
-                                <img src="" alt="" class="ind5">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>x
-            <div id="six" class="card__Six" onclick="cardFlip__Six()">
-                <div class="card__inner__Six">
-                    <div class="card__face card__face--front">
-                        <h2>Sixth Index Law</h2>
-                    </div>
-                    <div class="card__face card__face--back">
-                        <div class="card__content">
-                            <div class="card__header">
-                                <h2>Sixth Index Law</h2>
-                            </div>
-                            <div class="card__body">
-                                <img src="" alt="" class="ind6">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="seven" class="card__Seven" onclick="cardFlip__Seven()">
-                <div class="card__inner__Seven">
-                    <div class="card__face card__face--front">
-                        <h2>Seventh Index Law</h2>
-                    </div>
-                    <div class="card__face card__face--back">
-                        <div class="card__content">
-                            <div class="card__header">
-                                <h2>Seventh Index Law</h2>
-                            </div>
-                            <div class="card__body">
-                                <img src="" alt="" class="ind7">
+                                <img id="cardBody" src="images/1stlaw.jpg" alt="" class="ind1">
                             </div>
                         </div>
                     </div>
@@ -143,9 +41,8 @@
         </p>
 
 
-        <div class="left" onclick="changeCardLeft()"></div>
-        <div class="right" onclick="changeCardRight()"></div>
-
+        <img class='inverted-button' id="leftbutton"  src='images/leftarrow.png' onclick="changeCardLeft()">
+        <img class='inverted-button' src="images/rightarrow.png" onclick="changeCardRight()">
         <script src="/scripts/FCsc.js"></script>
     </body>
 </html>
