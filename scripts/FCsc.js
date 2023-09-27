@@ -1,6 +1,6 @@
 const cardOne = document.querySelector('.card__inner__One');
 const cardHeaders = ['First Index Law', 'Second Index Law', 'Third Index Law', 'Fourth Index Law', 'Fifth Index Law', 'Sixth Index Law', 'Seventh Index Law', '0 Law'];
-const cardBodies = ['images/1stlaw.jpg', 'images/2ndlaw.webp', 'images/3rdlaw.jpg', 'images/4thLaw.png', 'images/5thLaw.png', 'images/6thLaw.png', 'images/7thLaw.png', 'images/0law.jpg']; 
+const cardBodies = ['images/1stlaw.jpg', 'images/2ndlaw.webp', 'images/3rdlaw.jpg', 'images/4thLaw.png', 'images/5thLaw.png', 'images/6thlaw.png', 'images/7thlaw.png', 'images/0law.jpg']; 
 const cardHeadFrontHtml = document.getElementById('cardHeaderF');
 const cardHeadBackHtml = document.getElementById('cardHeaderB');
 const cardBodyBackHtml = document.getElementById('cardBody');
