@@ -26,7 +26,7 @@ function generateQuestionsSurds(){
         plusOrMinus = Math.random() < 0.5 ? -1 : 1; //Chooses if the next number is negative or positive
         let valueBp = Math.floor(Math.random() * 5)*plusOrMinus; //Generates a number between 1 & 100
         let operation = ops[Math.floor(Math.random()*ops.length)];
-        questions[i].innerHTML = ('<b>Question '+(i+1)+': </b>'+`${valueAb}<sup>${valueAp}</sup> ${operation} (${valueAb}<sup>${valueBp}</sup>) = ?`);
+        questions[i].innerHTML = ('<b>Question '+(i+1)+': </b>'+`${valueAb}<sup>${valueAp}</sup> ${operation} (${valueAb})<sup>${valueBp}</sup> = ?`);
         answers.push(Math.round(eval(`${Math.pow(valueAb, valueAp)} ${operation} ${Math.pow(valueAb, valueBp)}`)*100)/100);
     }
 }

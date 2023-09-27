@@ -84,40 +84,57 @@ display: block;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
-#questionNum {
-    font-size: 32px;
+#question {
+    font-size: 48px;
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+}
+#questionNum {
+    font-size: 48px;
+    text-align: center;
 }
 #answerViewer, #answerText, #answer {
     font-size: 22px;
     text-align: center;
 }
+#answerTextTwo {
+    font-size: 16px;
+    text-align: center;
+}
+.correctAnswer {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
 #answerViewer {
     margin-left: 38.5%;
 }
+.buttons {
+    width: 1200px;
+    height: 30px;
+    display: flex;
+
+}
 #checkAnswer {
-    border-radius: 20px;
     width: 150px;
-    height: 50px;
-    padding: 0.1px;
-    margin-top: 9%;
+    border-radius: 20px;
+    padding: 0.5px;
+    margin-bottom: -20px;
     margin-left: 1%;
     background-color: #2e2e2e;
     color: white;
-    text-align: center;;
+    text-align: center;
+    justify-self: start;
 }
 #nextQuestion {
-    border-radius: 20px;
     width: 150px;
-    height: 50px;
-    padding: 0.1px;
-    margin-top: 3%;
-    margin-left: 86%;
+    border-radius: 20px;
+    padding: 0.5px;
+    margin-bottom: -20px;
+    margin-left: 73%;
     background-color: #2e2e2e;
     color: white;
-    text-align: center;;
+    text-align: center;
+    justify-self: end;
 }
 
 

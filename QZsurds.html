@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles/QZsurds.css">
-        <title>Rvei: Quiz</title>
+        <title>Rvei: Surds Quiz</title>
     </head>
     <body onload="reGenerateQuestionsSurds()">
         <nav class="navbar">
@@ -22,18 +22,22 @@
         </nav>
         <div class="quizQuestions">
             <h2>Surds Quiz</h2>
-            <p id=""></p>
+            <p id="question"></p>
             <p id="questionNum"></p>
-
             <p id="answerText">Insert Answer Below</p>
-            <input type="number" id="answerViewer">
-            <br><p id="answer"></p>
-
-
-
-
-            <br><div id="checkAnswer" onclick="checkAnswerSurds()"><p>Check Answer</p></div><div id="nextQuestion" onclick="reGenerateQuestionsSurds()"><p>Next Question</p></div>
-            
+            <p id="answerTextTwo">(rounded to two decimal places)</p>
+            <input type="number" id="answerViewer" onblur="getViewerAnswer()">
+            <div class="correctAnswer">
+                <p>Correct Answer</p><p id="answer"></p>
+            </div>
+            <div class="buttons">
+                <div id="checkAnswer" onclick="checkAnswerSurds()">
+                    <p>Check Answer</p>
+                </div>
+                <div id="nextQuestion" onclick="reGenerateQuestionsSurds()">
+                    <p>Next Question</p>
+                </div>
+            </div>
         </div>
 
 
