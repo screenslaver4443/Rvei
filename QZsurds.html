@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="styles/QZsurds.css">
         <title>Rvei: Surds Quiz</title>
     </head>
-    <body onload="reGenerateQuestionsSurds()">
+    <body onload="startQuiz()">
         <nav class="navbar">
             <a href="index.html" id="logo">{logoHere}</a> 
             <div class="dropdown">
@@ -22,28 +22,33 @@
         </nav>
         <div class="quizQuestions">
             <h2>Surds Quiz</h2>
+            <div id="start" onclick="reGenerateQuestionsSurds()">
+                <p id="startText"></p>
+            </div>
             <p id="question"></p>
             <p id="questionNum"></p>
-            <p id="answerText">Insert Answer Below</p>
-            <p id="answerTextTwo">(rounded to two decimal places)</p>
+            <p id="answerText"></p>
+            <p id="answerTextTwo"></p>
             <input type="number" id="answerViewer" onblur="getViewerAnswer()">
+            <br>
             <div class="correctAnswer">
-                <p>Correct Answer</p><p id="answer"></p>
+                <p id="CoA"></p><p id="answer"></p>
             </div>
             <div class="buttons">
                 <div id="checkAnswer" onclick="checkAnswerSurds()">
-                    <p>Check Answer</p>
+                    <p id="ChA"></p>
                 </div>
                 <div id="nextQuestion" onclick="reGenerateQuestionsSurds()">
-                    <p>Next Question</p>
+                    <p id="NQ"></p>
                 </div>
             </div>
+            <b><p id="QF"></p></b>
+            <p id="CAP"></p>
+            <p id="AP"></p>
+            <div id="resetButton" onclick="location.reload()">
+                <p id="reset"></p>
+            </div>
         </div>
-
-
-
-
-
         <script src="scripts/QZsurds.js"></script>
     </body>
 </html>
