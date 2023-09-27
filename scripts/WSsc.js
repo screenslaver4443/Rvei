@@ -17,6 +17,7 @@ function generateQuestionsArithmatic(){
     }
 }
 function generateQuestionsSurds(){
+    answers = []
     for (let i = 0; i < questions.length; i++) {
         let plusOrMinus = Math.random() < 0.5 ? -1 : 1; //Chooses if the next number is negative or positive
         let valueAb = Math.floor(Math.random() * 10+1)*plusOrMinus; //Generates a number between 1 & 100
@@ -29,6 +30,7 @@ function generateQuestionsSurds(){
         questions[i].innerHTML = ('<b>Question '+(i+1)+': </b>'+`${valueAb}<sup>${valueAp}</sup> ${operation} (${valueAb})<sup>${valueBp}</sup> = ?`);
         answers.push(Math.round(eval(`${Math.pow(valueAb, valueAp)} ${operation} ${Math.pow(valueAb, valueBp)}`)*100)/100);
     }
+
 }
 function viewAnswers(){
     let answershtml = ''; //Place holder for the html that the loop will append to. This is because using innerHTML in the loop will not work properly for making a list.
